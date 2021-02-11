@@ -18,9 +18,10 @@ test-sql-server = []
 test-monetdb = []
 # If set stats are collected and available via odbc_iter::stats()
 statistics = []
+encoding1251 = ["odbc/encoding1251"]
 
 [dependencies]
-odbc = "0.13.0"
+odbc = {git = "https://github.com/Inocustonner/odbc-rs"}
 regex = "1.1.0"
 lazy_static = "1.2.0"
 log = "0.4.6"
